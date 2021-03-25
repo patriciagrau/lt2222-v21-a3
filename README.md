@@ -13,7 +13,7 @@ FUNCTION A
 Separates the letters of a file and gets its set.
 
 
-Function a takes a file (f) and separates it into the smallest elements that it contains: letters, numbers, punctuation, spaces and new lines ('\n'). The beginning of the file is marked with '< s >' '< s >', and the end, with '< e >' '< e >'. It also gets the set of the letters, that is, all the different elements without repeating them (types).
+Function a takes a file (f) and separates it into the smallest elements that it contains: letters, numbers, punctuation, spaces and new lines ('\n'). The beginning of the file is marked with '<\s>' '<\s>', and the end, with '<\e>' '<\e>'. It also gets the set of the letters, that is, all the different elements without repeating them (types).
 
 Args:
 - f: a file.
@@ -27,7 +27,7 @@ FUNCTION G
 
 Returns an nd-array containing 0 in all positions except 1, whose value is 1.
 
-Line by line explanation:
+Line by line:
 
 - 25: z is a numpy d-array that contains as many zeros as the length of the list p.
 - 26: p.index(x) gives the index of the element x in the list p. That is, the position of the element x in the list. 
@@ -48,10 +48,10 @@ FUNCTION B
 From the smallest elements of a file and its set, it returns two numpy arrays. One contains the index of the vowels of the file (according to the vowel list), and the other contains arrays with 0 in most positions and 1 in others (depending on the function g).
 
 
-Line by line explanation:
+Line by line:
 
 - 32: Looping through a range of the length of the elements of a file, minus 4 because we are going to check four elements forward of the integer looping through (v).
-- 33: If an element (v+2 to avoid '< s >') is a vowel...
+- 33: If an element (v+2 to avoid '<\s>') is a vowel...
 - 37: Save in gt the index of the vowel in the vowel list
 - 39: Append to gr the concatenation of g(u[v], p), g(u[v+1], p), g(u[v+2], p), g(u[v+3], p) and g(u[v+4], p). gr will contain arrays with 0 in most elements, and 1 in the positions where the first argument of g appears.
 
