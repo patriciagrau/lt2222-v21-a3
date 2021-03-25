@@ -75,7 +75,7 @@ m and h are positional arguments (strings).
 
 k and r are optional arguments (k is set to 200 by default and r, to 100.)
 
-- k is the hiddensize (200)
+- k is the hiddensize (default = 200)
 - r is the number of epochs (default = 100).
 
 
