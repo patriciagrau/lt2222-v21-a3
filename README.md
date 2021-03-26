@@ -13,13 +13,14 @@ FUNCTION A
 Separates the letters of a file and gets its set.
 
 
-Function a takes a file (f) and separates it into the smallest elements that it contains: letters, numbers, punctuation, spaces and new lines ('\n'). The beginning of the file is marked with '<\s>' '<\s>', and the end, with '<\e>' '<\e>'. It also gets the set of the letters, that is, all the different elements without repeating them (types).
+Takes a file (f) and separates it into the smallest elements that it contains: letters, numbers, punctuation, spaces and new lines ('\n'). The beginning of the file is marked with '<\s>' '<\s>', and the end, with '<\e>' '<\e>'. It also gets the set of the letters, that is, all the different elements without repeating them (types).
 
 Args:
 - f: a file.
 
 Returns: 
-- A tuple containing two lists: the smallest elements of the file, and the set of the elements.
+- mm: the smallest elements of the file
+- list(set(mm)): the set of the elements.
 
 
 
@@ -39,7 +40,7 @@ Args:
 - x: an element of that list.
 
 Returns:
-- z: an nd-array containing 0 in all positions except 1.
+- z: an nd-array containing 0 in all positions except one, where its value is 1.
 
 
 
@@ -61,8 +62,8 @@ Args:
 - p: the set of u.
 
 Returns:
-- gt: a numpy array containing the index of the vowels (in the vowel list in the beginning).
-- gp: a numpy array containing arrays.
+- np.array(gt): a numpy array containing the index of the vowels (in the vowel list in the beginning).
+- np.array(gp): a numpy array containing arrays.
 
 
 
