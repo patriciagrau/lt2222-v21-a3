@@ -89,7 +89,35 @@ Line by line:
 
 ## Part 2
 
+eval.py contains four functions: g2, b2, new_text and calculate_accuracy.
+
+The first two functions are a modification of functions b and g from train.py, to make the test and training data compatible when evaluating the model. The function new_text creates a new file with the predicted vowels inserted in the text, and calculate_accuracy does what we all expect to do, calculate the accuracy of the model.
+
 ## Part 3
+
+Five different variations of the --k (hiddensize) option, holding the --r (epochs) option at its default (100).
+- k = 100, accuracy = 10.585075887873026%
+- k = 300, accuracy = 11.337919797230017%
+- k = 400, accuracy = 8.311457107510336%
+- k = 500, accuracy = 16.171811351498143%
+- k = 600, accuracy = 6.758999426692013%
+
+Five different variations of the --r (epochs) option, holding the --k (hiddensize) option at its default (200).
+- r = 150, accuracy = 13.447089707612928%
+- r = 200, accuracy = 4.363175522766362%
+- r = 250, accuracy = 7.116562566005853%
+- r = 300, accuracy = 23.04245496514891%
+- r = 400, accuracy = 10.983374068374522%
+
+
+The model that performed the best got an accuracy of 23.04%, and was trained with default hiddensize (200) and 300 epochs. The model (model_r_300) and the text with its predicted vowels (output_r_300) have been saved to the repository.
+
+
+Before evaluating the model, I was expecting to see a direct proportion change with either one of the factors and the accuracy of the model. That is, the bigger the hiddensize or the more epochs, the better the accuracy. Instead, I was very surprised to see that the accuracies do not follow this proportionality. I also thought the same model would give the same accuracy if evaluated again, which did not happen (tested with r = 100, k = 500).
+
+
+It is very difficult to draw any sort of conclusion, given the circumstances: not only the mentioned observations, but also the fact that I do not know any Swedish, and even less so XIXth century Swedish. I imagine that, even if I did, such a low accuracy would make finding understandable patterns a herculean task.
+
 
 ## Bonuses
 
