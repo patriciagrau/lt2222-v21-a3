@@ -62,8 +62,8 @@ Args:
 - p: the set of u.
 
 Returns:
-- np.array(gr): a numpy array containing the index of the vowels (in the vowel list in the beginning). classes?
-- np.array(gt): a numpy array containing arrays. features?
+- np.array(gr): a numpy array containing arrays. features?
+- np.array(gt): a numpy array containing the index of the vowels (in the vowel list in the beginning). classes?
 
 
 
