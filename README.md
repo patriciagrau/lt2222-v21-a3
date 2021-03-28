@@ -91,7 +91,7 @@ Line by line:
 
 eval.py contains four functions: g2, b2, new_text and calculate_accuracy.
 
-The first two functions are a modification of functions b and g from train.py, to make the test and training data compatible when evaluating the model. The function new_text creates a new file with the predicted vowels inserted in the text, and calculate_accuracy does what we all expect to do, calculate the accuracy of the model.
+The first two functions are a modification of functions b and g from train.py, to make the test and training data compatible when evaluating the model. The function new_text creates a new file with the predicted vowels inserted in the text, and calculate_accuracy does what we all expect it to do, it calculates the accuracy of the model.
 
 ## Part 3
 
